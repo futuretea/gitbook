@@ -1,4 +1,4 @@
-FROM node:12.8.1-alpine
+FROM node:6-slim
 RUN npm config set registry https://registry.npm.taobao.org \
     && npm install -g gitbook-cli \
-    && gitbook fetch
+    && gitbook fetch 2.6.7
